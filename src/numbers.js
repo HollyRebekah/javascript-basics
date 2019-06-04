@@ -15,7 +15,7 @@ const divide = (a, b) => {
 };
 
 const power = (a, b) => {
-  // your code here
+  return a ** b;
 };
 
 const round = (a) => {
