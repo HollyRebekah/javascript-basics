@@ -19,7 +19,7 @@ const firstCharacter = (string) => {
 };
 
 const firstCharacters = (string, n) => {
-  // your code here
+  return string.substring(0,n)
 };
 
 module.exports = {
