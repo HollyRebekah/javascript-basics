@@ -11,7 +11,7 @@ const lowercase = (string) => {
 };
 
 const countCharacters = (string) => {
-  // your code here
+  return string.length
 };
 
 const firstCharacter = (string) => {
