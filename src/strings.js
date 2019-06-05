@@ -7,7 +7,7 @@ const uppercase = (string) => {
 };
 
 const lowercase = (string) => {
-  return string.toLowercase()
+  return string.toLowerCase()
 };
 
 const countCharacters = (string) => {
