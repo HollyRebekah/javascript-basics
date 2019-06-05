@@ -1,13 +1,13 @@
 const sayHello = (string) => {
-  return `Hello, ${  string }!`
+  return `Hello, ${ string }!`
 };
 
 const uppercase = (string) => {
-  // your code here
+  return string.toUpperCase();
 };
 
 const lowercase = (string) => {
-  // your code here
+  return string.toLowercase()
 };
 
 const countCharacters = (string) => {
