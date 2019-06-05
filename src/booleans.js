@@ -11,11 +11,11 @@ const either = (a, b) => {
 };
 
 const none = (a, b) => {
-  // your code here
+  return !a && !b
 };
 
 const one = (a, b) => {
-  // your code here
+  return a && !b || !a && b  
 };
 
 const truthiness = (a) => {
