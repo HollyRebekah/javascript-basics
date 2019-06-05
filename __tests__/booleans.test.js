@@ -33,7 +33,7 @@ describe('both', () => {
 });
 
 describe('either', () => {
-  xit('returns true if at least one of the given values are true', () => {
+  it('returns true if at least one of the given values are true', () => {
     expect(either(true, true)).toBe(true);
     expect(either(true, false)).toBe(true);
     expect(either(false, true)).toBe(true);

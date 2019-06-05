@@ -7,7 +7,7 @@ const both = (a, b) => {
 };
 
 const either = (a, b) => {
-  // your code here
+  return a || b
 };
 
 const none = (a, b) => {
