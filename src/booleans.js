@@ -19,43 +19,43 @@ const one = (a, b) => {
 };
 
 const truthiness = (a) => {
-  // your code here
+  return ;
 };
 
 const isEqual = (a, b) => {
-  // your code here
+  return a === b
 };
 
 const isGreaterThan = (a, b) => {
-  // your code here
+  return a > b
 };
 
 const isLessThanOrEqualTo = (a, b) => {
-  // your code here
+  return a <= b
 };
 
 const isOdd = (a) => {
-  // your code here
+  return a % 2 === 1
 };
 
 const isEven = (a) => {
-  // your code here
+  return a % 2 === 0
 };
 
 const isSquare = (a) => {
-  // your code here
+  return Number.isInteger(Math.sqrt(a))
 };
 
 const startsWith = (char, string) => {
-  // your code here
+  return char === string[0]
 };
 
 const containsVowels = (string) => {
-  // your code here
+  string.toLowerCase(string.includes('a' || 'e' || 'i' || 'o' || 'u'))
 };
 
 const isLowerCase = (string) => {
-  // your code here
+  return string === string.toLowerCase()
 };
 
 module.exports = {
