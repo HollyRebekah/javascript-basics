@@ -61,7 +61,7 @@ describe('one', () => {
 
 describe('truthiness', () => {
   it('returns the truthiness of the given value', () => {
-
+    expect(truthiness('')).toBe(false);
     expect(truthiness('dbbd')).toBe(true);
     expect(truthiness(0)).toBe(false);
     expect(truthiness(3)).toBe(true);
