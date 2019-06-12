@@ -19,7 +19,7 @@ const one = (a, b) => {
 };
 
 const truthiness = (a) => {
-  return !!a   
+  return Boolean(a)   
 };
 
 const isEqual = (a, b) => {
