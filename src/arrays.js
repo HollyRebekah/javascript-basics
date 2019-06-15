@@ -14,52 +14,46 @@ const csvStringToArray = (string) => {
 };
 
 const addToArray = (element, array) => {
-  return array.push(element);
+    array.push(element);
+    return array;
 };
 
-const addToArray2 = (element, array) => {
-  const newArray = array.map(element => {
-  });
-  return newArray;
-};
+const addToArray2 = (element, array) => array.concat([element]);
 
 const removeNthElement = (index, array) => {
   return array.splice(index, 1);
 };
 
 const numbersToStrings = (numbers) => {
-  for (let i = 0; i < numbers.length; i++) {
-    numbers[i] = numbers[i].toString()
-  }
-  return numbers;
+  return numbers.map(number => String(number))
 };
 
 const uppercaseWordsInArray = (strings) => {
-  for (let i = 0; i < strings.length; i++) {
-    strings[i] = strings[i].toUpperCase();
-  }
-  return strings;
+  return strings.map(word => word.toUpperCase());
 };
 
 const reverseWordsInArray = (strings) => {
-  for (let i = 0; i < strings.length; i++) {
-    strings[i] = strings[i].split('').reverse().join('');
-  }
-  return strings;
+  return strings.map(word => word.split('').reverse().join('')
+  );
 };
 
 const onlyEven = (numbers) => {
-  return numbers.filter(number => {
-    number % 2 === 0
-  })
+  return numbers.filter( number => number % 2 === 0
+  );
 };
 
 const removeNthElement2 = (index, array) => {
-  // your code here
+  return array.filter((_, itemIndex) => itemIndex !== index);
 };
 
 const elementsStartingWithAVowel = (strings) => {
-  // your code here
+  const vowels = ['a', 'e', 'i', 'o', 'u'];
+
+  return strings.filter(word => {
+    const firstLetter = word[0].toLowerCase();
+    
+    return vowels.includes(firstLetter);
+  });
 };
 
 const removeSpaces = (string) => {
